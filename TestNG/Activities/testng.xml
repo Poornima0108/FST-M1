@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNGTestSuite" thread-count="2" parallel="classes">
+	<parameter name="username" value="admin" />
+    <parameter name="password" value="password" />
+    <!-- Comment out groups to run everything -->
+	<groups> <!-- Groups Control -->
+        <run>
+            <include name="HeaderTests" />
+        </run>
+    </groups>
+    <test name="SuiteTests" >
+    <classes>
+      <class name="activities.Activity4_DemoOne"/>
+      <class name="activities.Activity4_DemoTwo"/>
+      <class name="activities.Activity5"/>
+      <class name="activities.Activity6"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
